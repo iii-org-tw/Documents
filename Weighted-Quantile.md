@@ -11,7 +11,7 @@ Input array or object that can be converted to an array.
 Quantile or sequence of quantiles to compute, which must be between 0 and 1 inclusive.
 
 - **w : array_like, optional**
-All weight value should > 0.
+All weight value should be positive.
 `w` must have the same shape with `a` or be a 1d array for broadcast.
 When `w` is a 1d array, `axis` should be an `int` or `None` and
 `w.size == a.shape[axis]` or `w.size == a.size`.
@@ -79,7 +79,7 @@ Compute the weighted q-th quantile of the data.
 - **x :**
     Vector of data, same length as weight.
 - **q :**
-    Quantile to compute
+    Quantile or sequence of quantiles to compute, which must be between 0 and 1 inclusive.
 - **na.rm :**
     Logical: Should NAs be stripped before computation proceeds?
 - **weight :**
