@@ -69,6 +69,34 @@ array([6.5, 4.5, 2.5])
 array([7.,  2.])
 >>> assert not np.all(a == b)
 ```
+# R wtd.quantile
+**wtd.quantile (x, q, na.rm = FALSE, weight=FALSE)**
+
+Compute the weighted q-th quantile of the data.
+
+**Parameters**
+
+- **x :**
+    Vector of data, same length as weight.
+- **q :**
+    Quantile to compute
+- **na.rm :**
+    Logical: Should NAs be stripped before computation proceeds?
+- **weight :**
+    Vector of weights
+
+**Returns**
+    Returns an empirical q quantile from a weighted sample.
+    
+**Examples**
+```sh
+> require(Hmisc)
+> data <- c(1,2,3)
+> weights<- c(3, 2, 1)
+> wtd.quantile(data, weights=weights, probs=0.5)
+50%
+1.5
+```
 # New Features!
 
   - Import a HTML file and watch it magically convert to Markdown
