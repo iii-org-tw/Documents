@@ -1,5 +1,3 @@
-
-dsadwdwadsadwqdwq
 # Numpy.quantile
 **numpy.quantile(a, q, axis=None, out=None, overwrite_input=False, interpolation='linear', keepdims=False, w=None)**
 
