@@ -70,7 +70,7 @@ array([7.,  2.])
 >>> assert not np.all(a == b)
 ```
 # R wtd.quantile
-**wtd.quantile (x, q, na.rm = FALSE, weight=FALSE)**
+**wtd.quantile (x, probs = c(0, .25, .5, .75, 1), na.rm = TRUE, weight=FALSE)**
 
 Compute the weighted q-th quantile of the data.
 
@@ -78,7 +78,7 @@ Compute the weighted q-th quantile of the data.
 
 - **x :**
     Vector of data, same length as weight.
-- **q :**
+- **probs :**
     Quantile or sequence of quantiles to compute, which must be between 0 and 1 inclusive.
 - **na.rm :**
     Logical: Should NAs be stripped before computation proceeds?
@@ -93,10 +93,19 @@ Compute the weighted q-th quantile of the data.
 > require(Hmisc)
 > data <- c(1,2,3)
 > weights<- c(3, 2, 1)
-> wtd.quantile(data, weights=weights, probs=0.5)
+> wtd.quantile(data, probs=0.5, weights=weights)
 50%
 1.5
+> probs = c(0.1, 0.5, 0.7)
+> wtd.quantile(data, probs=probs, weights=weights)
+10% 50% 70% 
+1.0 1.5 2.0
 ```
+
+
+
+
+
 # New Features!
 
   - Import a HTML file and watch it magically convert to Markdown
