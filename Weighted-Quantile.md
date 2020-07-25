@@ -3,6 +3,10 @@
 
 Compute the weighted q-th quantile of the data along the specified axis.
 
+**Formula**
+
+\pi
+$\pi$
 **Parameters**
 - **a : array_like**  
 Input array or object that can be converted to an array.
