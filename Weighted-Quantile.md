@@ -4,9 +4,13 @@
 Compute the weighted q-th quantile of the data along the specified axis.
 
 **Formula**
-\begin{equation}
-$ \sum_{\forall i}{x_i^{2}} $
-\end{equation}
+\begin{equation}  
+
+$ \sum_{\forall i}{x_i^{2}} $  
+  
+\end{equation}  
+
+
 
 **Parameters**
 - **a : array_like**  
