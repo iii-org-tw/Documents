@@ -62,13 +62,13 @@ array([[10,  7,  4],
 3.5
 >>> w = np.array([[1, 2, 3], [3, 2, 1]])
 >>> np.quantile(a, 0.5, w=w, axis=0)
-array([3, 4.5, 4])
+array([6.5, 4.5, 2.5])
 >>> w = np.array([1, 2, 3])
 >>> np.quantile(a, 0.5, w=w, axis=1)
-array([5.5, 1.5])
+array([6.25, 1.75])
 >>> np.quantile(a, 0.5, w=w, axis=1, keepdims=True)
-array([[5.5],
-       [1.5]])
+array([[6.25],
+       [1.75]])
 >>> m = np.quantile(a, 0.5, axis=0)
 >>> out = np.zeros_like(m)
 >>> np.quantile(a, 0.5, axis=0, out=out)
@@ -76,7 +76,7 @@ array([6.5, 4.5, 2.5])
 >>> m
 array([6.5, 4.5, 2.5])
 >>> w_equal = np.ones(3)
->>> np.array_equal(np.quantile(a, 0.5, w=w, axis=1), np.quantile(a, 0.5, w=w_equal, axis=1))
+>>> np.array_equal(np.quantile(a, 0.5, axis=1), np.quantile(a, 0.5, w=w_equal, axis=1))
 True
 ```
 # R wtd.quantile
