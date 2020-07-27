@@ -29,14 +29,12 @@ Currently, Only R-7 support estimating weighted percentiles.
 
 **Examples**
 ```sh
-Percentile p = new Percentile().
-			       withEstimationType(Percentile.EstimationType.R_7);
+Percentile p = new Percentile().withEstimationType(Percentile.EstimationType.R_7);
 double[] dataset = { 1, 2, 3, 4, 5 };
 double[] weights = { 1, 1, 1, 1, 1 };
 >>>3.0
 
-Percentile p = new Percentile().
-				   withEstimationType(Percentile.EstimationType.R_7);
+Percentile p = new Percentile().withEstimationType(Percentile.EstimationType.R_7);
 double[] dataset = { 1, 2, 3, 4, Double.NaN};
 double[] weights = { 1, 1, 1, 1, 1};
 System.out.println(p.evaluate(dataset, weights, 50));
@@ -45,8 +43,7 @@ System.out.println(p.evaluate(dataset, weights, 50));
          the size of dataset is four after removing nan.
 */
 
-Percentile p = new Percentile().
-				   withEstimationType(Percentile.EstimationType.R_7);
+Percentile p = new Percentile().withEstimationType(Percentile.EstimationType.R_7);
 double[] dataset = { 1, 2, 3, 4, 5};
 double[] weights = { 1, 2, 3, 4, 5};
 System.out.println(p.evaluate(dataset, weights, 50));
