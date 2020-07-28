@@ -11,7 +11,7 @@ Define:
 
 For an interpolation of quantile ![formula](https://render.githubusercontent.com/render/math?math=p), find ![formula](https://render.githubusercontent.com/render/math?math=k) such that ![formula](https://render.githubusercontent.com/render/math?math=\frac{S_k}{S_n}\le\p\le\frac{S_{k%2B1}}{S_n}).  
 Our estimate would then be:
-![formula](https://render.githubusercontent.com/render/math?math=X_k%2B(X_{k%2B1}-X_k)\frac{pS_n-S_k}{S_{k+1}-S_k})  
+![formula](https://render.githubusercontent.com/render/math?math=X_k%2B(X_{k%2B1}-X_k)\frac{pS_n-S_k}{S_{k%2B1}-S_k})  
 [Source](https://stats.stackexchange.com/questions/13169/defining-quantiles-over-a-weighted-sample)
 
 **Parameters**
@@ -92,7 +92,7 @@ Define:
 
 For an interpolation of quantile ![formula](https://render.githubusercontent.com/render/math?math=p), find ![formula](https://render.githubusercontent.com/render/math?math=k) such that ![formula](https://render.githubusercontent.com/render/math?math=\frac{S_k}{S_n}\le\p\le\frac{S_{k%2B1}}{S_n}).  
 Our estimate would then be:
-![formula](https://render.githubusercontent.com/render/math?math=X_k%2B(X_{k%2B1}-X_k)\frac{pS_n-S_k}{S_{k+1}-S_k})  
+![formula](https://render.githubusercontent.com/render/math?math=X_k%2B(X_{k%2B1}-X_k)\frac{pS_n-S_k}{S_{k%2B1}-S_k})  
 [Source](https://stats.stackexchange.com/questions/13169/defining-quantiles-over-a-weighted-sample)
 
 **Parameters**
