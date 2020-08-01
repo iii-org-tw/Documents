@@ -75,8 +75,8 @@ let index = p * ( N - 1) + 1   , where N denotes the number of samples and p den
 
 But when we compute that by weighted percentile and set all weight to 1,
 
-**estimation = Xk + (X_{k+1} - X_{k}) * (p*(N-1) - (k-1)(N-1))/((N-1))**
+**estimation = Xk + (X_{k+1} - X_{k}) * [p*(N-1)-(k-1)(N-1))/(N-1)]**
 
-Though the term "**(p*(N-1) - (k-1)(N-1))/((N-1))**" is mathematically equal to "**(index - k)**",
+Though the term "**[p*(N-1)-(k-1)(N-1))/(N-1)]**" is mathematically equal to "**(index - k)**",
 
 the former do multiplication and division which may cause deviation and it's inevitable.
