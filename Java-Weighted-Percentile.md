@@ -71,7 +71,7 @@ When we compute by **non-weighted** percentile,
 
 let index = p * ( N - 1) + 1   , where N denotes the number of samples and p denotes (p-percentiles/100).
 
-**estimation = Xk + (X_{k+1} - X_{k}) * (index - k)** (here k = floor(index))
+**estimation = Xk + (X_{k+1} - X_{k}) * (index - k)** , here k = floor(index)
 
 But when we compute that by weighted percentile and set all weight to 1,
 
