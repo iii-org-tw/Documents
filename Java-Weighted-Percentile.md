@@ -62,7 +62,7 @@ https://github.com/apache/commons-math/pull/157
 
 ## **Float Point Accuracy**
 
-The deviations between the weighted percentile functions and the original ones are less than `1e-13` tested on 'HIGGS.csv'
+The deviations between the results from weighted percentile functions and the original ones are less than `1e-13` tested on 'HIGGS.csv'
 
 The reason why such deviations exist is as follows.
 
